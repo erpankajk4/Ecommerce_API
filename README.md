@@ -24,14 +24,14 @@ To get started with the API, follow these steps:
 The server should now be running at http://localhost:8000 <br>
 
 ## API Endpoints
-- To test the API using Postman:
-1. Create a product
+- To test the API using Postman:<br>
+1. Create a product<br>
 URL: POST /products/create<br>
 Content-Type: application/json<br>
 
 Example Request:<br>
-`POST http://localhost:8000/products/create
-{<br>
+POST http://localhost:8000/products/create<br>
+`{<br>
   "name": "laptop",
   "quantity": 10
 }`<br>
@@ -44,11 +44,11 @@ Example Response:<br>
   }
 }`
 
-2. List products
-URL: GET /products
+2. List products<br>
+URL: GET /products<br>
 
-Example Request:
-GET http://localhost:8000/products
+Example Request:<br>
+GET http://localhost:8000/products<br>
 `{
   "products": [
     {
@@ -69,22 +69,22 @@ GET http://localhost:8000/products
   ]
 }`
 
-3. Delete a product
-URL: DELETE /products/:id
+3. Delete a product<br>
+URL: DELETE /products/:id<br>
 
-Example Request:
-DELETE http://localhost:8000/products/609f4fbcf6b753001faad7a4
-Example Response:
+Example Request:<br>
+DELETE http://localhost:8000/products/609f4fbcf6b753001faad7a4<br>
+Example Response:<br>
 `{
   "message": "Product deleted"
 }`
 
-4. Update quantity of a product
-URL: POST /products/:id/update_quantity/?number=10
+4. Update quantity of a product<br>
+URL: POST /products/:id/update_quantity/?number=10<br>
 
-Example Request:
-POST http://localhost:8000/products/609f4fbcf6b753001faad7a4/update_quantity/?number=10 
-Example Response:
+Example Request:<br>
+POST http://localhost:8000/products/609f4fbcf6b753001faad7a4/update_quantity/?number=10 <br>
+Example Response:<br>
 `{
     "product": {
       "_id": "609f4fbcf6b753001faad7a4",
