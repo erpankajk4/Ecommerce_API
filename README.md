@@ -10,16 +10,16 @@ To get started with the API, follow these steps:
 
 ### Installation
 1. Clone the repository:<br>
-   git clone https://github.com/erpankajk4/nodejs-ecommerce-api.git
+   `git clone https://github.com/erpankajk4/nodejs-ecommerce-api.git`
 
-2. Navigate to the project directory:<br>
-    cd ecommerce-platform-api
+2. Navigate to the project directory:
+    `cd ecommerce-platform-api`
 
-3. Install the dependencies:<br>
-    npm install
+3. Install the dependencies:
+    `npm install`
 
-4. Start the API server:<br>
-    npm start
+4. Start the API server:
+    `npm start`
 
 The server should now be running at http://localhost:8000
 
@@ -30,26 +30,26 @@ URL: POST /products/create
 Content-Type: application/json
 
 Example Request:
-POST http://localhost:8000/products/create
+`POST http://localhost:8000/products/create
 {
   "name": "laptop",
   "quantity": 10
-}
+}`
 Example Response:
-{
+`{
   "product": {
     "name": "laptop",
     "quantity": 10,
     "_id": "609f4fbcf6b753001faad7a4",
   }
-}
+}`
 
 2. List products
 URL: GET /products
 
 Example Request:
 GET http://localhost:8000/products
-{
+`{
   "products": [
     {
       "_id": "609f4fbcf6b753001faad7a4",
@@ -67,7 +67,7 @@ GET http://localhost:8000/products
       "quantity": 8,
     }
   ]
-}
+}`
 
 3. Delete a product
 URL: DELETE /products/:id
@@ -75,9 +75,9 @@ URL: DELETE /products/:id
 Example Request:
 DELETE http://localhost:8000/products/609f4fbcf6b753001faad7a4
 Example Response:
-{
+`{
   "message": "Product deleted"
-}
+}`
 
 4. Update quantity of a product
 URL: POST /products/:id/update_quantity/?number=10
@@ -85,14 +85,14 @@ URL: POST /products/:id/update_quantity/?number=10
 Example Request:
 POST http://localhost:8000/products/609f4fbcf6b753001faad7a4/update_quantity/?number=10 
 Example Response:
-{
+`{
     "product": {
       "_id": "609f4fbcf6b753001faad7a4",
       "name": "laptop",
       "quantity": 20,
     },
     "message": "Updated successfully"
-  }
+  }`
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
