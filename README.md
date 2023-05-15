@@ -9,16 +9,16 @@ To get started with the API, follow these steps:
 - MongoDB (Make sure MongoDB is installed and running on your system)
 
 ### Installation
-1. Clone the repository:
+1. Clone the repository:<br>
    git clone https://github.com/erpankajk4/nodejs-ecommerce-api.git
 
-2. Navigate to the project directory:
+2. Navigate to the project directory:<br>
     cd ecommerce-platform-api
 
-3. Install the dependencies:
+3. Install the dependencies:<br>
     npm install
 
-4. Start the API server:
+4. Start the API server:<br>
     npm start
 
 The server should now be running at http://localhost:8000
