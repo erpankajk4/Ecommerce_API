@@ -12,37 +12,37 @@ To get started with the API, follow these steps:
 1. Clone the repository:<br>
    `git clone https://github.com/erpankajk4/nodejs-ecommerce-api.git`
 
-2. Navigate to the project directory:
+2. Navigate to the project directory:<br>
     `cd ecommerce-platform-api`
 
-3. Install the dependencies:
+3. Install the dependencies:<br>
     `npm install`
 
-4. Start the API server:
+4. Start the API server:<br>
     `npm start`
 
-The server should now be running at http://localhost:8000
+The server should now be running at http://localhost:8000 <br>
 
 ## API Endpoints
 - To test the API using Postman:
 1. Create a product
-URL: POST /products/create
-Content-Type: application/json
+URL: POST /products/create<br>
+Content-Type: application/json<br>
 
-Example Request:
-`POST http://localhost:8000/products/create
-{
-  "name": "laptop",
-  "quantity": 10
-}`
-Example Response:
-`{
-  "product": {
-    "name": "laptop",
-    "quantity": 10,
-    "_id": "609f4fbcf6b753001faad7a4",
-  }
-}`
+Example Request:<br>
+`POST http://localhost:8000/products/create<br>
+{<br>
+  "name": "laptop",<br>
+  "quantity": 10<br>
+}`<br>
+Example Response:<br>
+`{<br>
+  "product": {<br>
+    "name": "laptop",<br>
+    "quantity": 10,<br>
+    "_id": "609f4fbcf6b753001faad7a4",<br>
+  }<br>
+}`<br>
 
 2. List products
 URL: GET /products
