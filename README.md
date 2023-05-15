@@ -30,19 +30,19 @@ URL: POST /products/create<br>
 Content-Type: application/json<br>
 
 Example Request:<br>
-`POST http://localhost:8000/products/create<br>
+`POST http://localhost:8000/products/create
 {<br>
-  "name": "laptop",<br>
-  "quantity": 10<br>
+  "name": "laptop",
+  "quantity": 10
 }`<br>
 Example Response:<br>
-`{<br>
-  "product": {<br>
-    "name": "laptop",<br>
-    "quantity": 10,<br>
-    "_id": "609f4fbcf6b753001faad7a4",<br>
-  }<br>
-}`<br>
+`{
+  "product": {
+    "name": "laptop",
+    "quantity": 10,
+    "_id": "609f4fbcf6b753001faad7a4",
+  }
+}`
 
 2. List products
 URL: GET /products
